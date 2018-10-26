@@ -148,6 +148,12 @@ namespace BibliophileApplication.MyControls
                     MessageBox.Show("Enter number of available copies greater than 0", "Error", MessageBoxButton.OK);
                     return false;
                 }
+                else if(ac > tc)
+                {
+                    MessageBox.Show("Available copies cannont be more then Total copies", "Error", MessageBoxButton.OK);
+                    return false;
+
+                }
             }
 
             return true;
